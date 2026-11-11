@@ -23,3 +23,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+var has_key:bool = false
+
+func collect_key():
+	has_key = true
+	print("Avain kortti käsissä!")
